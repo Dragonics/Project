@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Web Đọc Truyện Tranh</title>
+    <link rel="stylesheet" href="TrangChu.css">
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="#home">Trang Chủ</a>
+        <a href="#news">Thể Loại</a>
+        <a href="#contact">Liên Hệ</a>
+        <a href="#about">Giới Thiệu</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Tìm kiếm.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+    </div>
+    <h1 style="text-align:center;">Khu Trạm Truyện</h1>
+    <div class="comic-grid">
+    </div>
+
+    <div class="comic-grid">
+        <div class="comic-item">
+            <img src="IMG/hồn trương ba da hàng thịt.png" alt="Truyện 1">
+            <p class="name-item">Làng</p>
+        </div>
+        <div class="comic-item">
+            <img src="IMG/lang__kim_lan.jpg" alt="Truyện 2">
+            <p class="name-item">Hồn Trương Ba, da hàng thịt</p>
+        </div>
+        <div class="comic-item">
+            <img src="IMG/Tiểu_thuyết_tết_ở_làng_địa_ngục.jpg" alt="Truyện 2">
+            <p class="name-item">Tết ở làng địa ngục</p>
+        </div>
+        <div class="comic-item">
+            <img src="IMG/Dat_Rung_Phuong_Nam.gif" alt="Truyện 2">
+            <p class="name-item">Đất Rừng Phương Nam</p>
+        </div>
+    </div>
+    <div class="pagination">
+        <a href="TrangChu.html">&laquo;</a>
+        <a href="TrangChu.html">1</a>
+        <a href="TrangChu(2).html" class="active">2</a>
+        <a href="TrangChu(2).html">&raquo;</a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
