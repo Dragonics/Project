@@ -1,33 +1,33 @@
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
         body{
             background-color: #cccccc;
         }
         .navbar {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            min-height: 50px;
+            top: 0;
             overflow: hidden;
             background-color: #00c8ff;
             transition: background-color 0.5s ease;
             border: solid gray;
+            justify-content: space-between;
         }
         .navbar:hover {
             background-color: #777;
         }
-        li{
-            text-align: -webkit-match-parent;
-        }
-        .option {
-            display: none;
-            position: absolute;
-            background: #000;
-            z-index: 500;
-            box-shadow: 2px 2px 5px #435267;
-            transition: .3s;
-            padding-top: 10px;
-            padding-bottom: 10px;}
-        .option {
+        .navbaritem{
             display: block;
         }
         .navbar a {
             float: left;
-            display: block;
             color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
@@ -36,30 +36,14 @@
         }
         .navbar a:hover {
             background-color: #ddd;
-            color: black;
+            color: rgba(0, 0, 0, 0.322);
         }
-        .search-container {
-            float: right;
+        .icon {
+            display: none;
+            right: 0;
         }
-        .search-container input[type=text] {
-            padding: 6px;
-            margin-top: 8px;
-            font-size: 17px;
-            border: none;
-        }
-        .search-container button {
-            float: right;
-            padding: 6px 10px;
-            margin-top: 8px;
-            margin-right: 16px;
-            background: #ddd;
-            font-size: 17px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.5s ease;
-        }
-        .search-container button:hover {
-            background: #ccc;
+        h1{
+            padding-top: 50px;
         }
         .comic-grid {
             display: grid;
@@ -68,13 +52,14 @@
             justify-items: center;
         }
         .comic-item {
+            transition: color 0.3s ease;
+            display: block;
             width: calc(50% - 20px);
             text-align: center;
         }
         .comic-item img {
             width: 100%;
-            height:    auto;
-            transition: transform 0.2s;
+            height: auto;
         }
         .comic-item p {
             background-color: #333;
@@ -83,21 +68,9 @@
             margin: 7px 0px 7px 0px;
             font-family:Quicksand,sans-serif
         }
-        .name-item, .comic-item{
-            transition: transform 0.2s; 
-        }
-        img:hover, .name-item:hover{
-            transform: scale(1.05);
-            cursor: pointer;
-        }
-        @media screen and (max-width: 800px) {
-            .navbar a, .search-container {
-                display: none;
-            }
-            .navbar .icon {
-                float: right;
-                display: block;
-            }
+        
+        .name-item:hover{
+            color: rgb(16, 177, 142);
         }
         .pagination {
             display: flex;
@@ -109,10 +82,19 @@
             text-decoration: none;
             color: #333;
         }
-        @media screen and (max-width: 800px) {
-            .navbar.responsive {position: relative;}
+        @media screen and (max-width: 1000px) {
+            .navbar a {
+                display: none;
+            }
+            .navbar .icon {
+                float: right;
+                display: block;
+            }
+            .navbar.responsive {
+                position: relative;
+            }
             .navbar.responsive .icon {
-                position: absolute;
+                position: fixed;
                 right: 0;
                 top: 0;
             }
@@ -121,9 +103,10 @@
                 display: block;
                 text-align: left;
             }
-            .navbar.responsive .search-container {
-                float: none;
-                width: 100%;
-                text-align: left;
+            .comic-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                justify-items: center;
             }
         }
