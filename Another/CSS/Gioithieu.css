@@ -21,7 +21,6 @@ img {
     margin: auto 15px;
     width: 20%;
     height: auto; 
-    transform: translateX(2%);
 }
 .content {
     flex: 1; 
