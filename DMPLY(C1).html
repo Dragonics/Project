@@ -5,50 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trang đọc truyện</title>
-<script>
-    function toggleTheme() {
-        const body = document.body;
-        body.classList.toggle('dark-mode');
-    }
-    const feedbackButton = document.getElementById('feedback-button');
-const feedbackPopup = document.getElementById('feedback-popup');
-const submitButton = document.getElementById('submit-feedback');
 
-feedbackButton.addEventListener('click', function() {
-    feedbackPopup.style.display = 'block';
-});
-
-submitButton.addEventListener('click', function() {
-    const userEmail = document.getElementById('user-email').value;
-    const userFeedback = document.getElementById('user-feedback').value;
-    alert(`Email: ${userEmail}\nPhản hồi: ${userFeedback}\n\nPhản hồi của bạn đã được gửi. Cảm ơn!`);
-    feedbackPopup.style.display = 'none';
-});
-function myFunction() {
-        var x = document.getElementById("myNavbar");
-        if (x.className === "navbar") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar";
-        }
-    }
-</script>
 <link rel="stylesheet" href="Đọc.css">
 <link rel="stylesheet" href="TrangChu.css">
 </head>
 <body>
-    <div class="navbar" id="myNavbar">
-        <a href="TrangChu.html">Trang Chủ</a>
-        <a href="#news">Tin Tức</a>
-        <a href="#contact">Liên Hệ</a>
-        <a href="#about">Giới Thiệu</a>
-        <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Tìm kiếm.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+    <div id="main">
+        <div class="navbar" id="myNavbar">
+            <div class="navlist">
+                <a class="navbaritem" href="index.html">Trang Chủ</a>
+                <a class="navbaritem" href="#">Thể Loại</a>
+                <a class="navbaritem" href="#">Liên Hệ</a>
+                <a class="navbaritem" href="#">Giới Thiệu</a>
+            </div>
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+            </div>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
     </div>
 
     <div class="container">
@@ -236,12 +209,15 @@ function myFunction() {
         <a href="trangchu.html">Chương trước</a>
         <a href='trang2.html'>Chương tiêp</a>   
     </div>
-    <button id="feedback-button">Báo Lỗi / Góp Ý</button>
-    <div id="feedback-popup" class="feedback-popup">
-        <h2>Phản Hồi</h2>
-        <input type="email" id="user-email" placeholder="hoangnguyen2200568@gmail.com">
-        <textarea id="user-feedback" placeholder="Nhập phản hồi của bạn"></textarea>
-        <button id="submit-feedback">Gửi</button>
+    
+    <div class="creditbar">
+        <div class="creditbaritem">
+            <p>@2024 Văn Học Việt - Đọc Văn Học Việt Nam</p>
+        </div>
+        <div>
+            <p>Email: vhv@proton.me</p>
+            <p>Chính Sách Bảo Mật</p>
+        </div>
     </div>
 
 </div>

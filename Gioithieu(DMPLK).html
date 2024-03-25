@@ -4,8 +4,8 @@
         <title>Truyện Tranh</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="TrangChu.css">
-        <link rel="stylesheet" href="Gioithieu.css">
+        <link rel="stylesheet" href="Another/CSS/Gioithieu.css">
+        <link rel="stylesheet" href="Another/CSS/TrangChu.css">
         <script>
         const accordion = document.querySelector('.accordion');
 
@@ -18,33 +18,29 @@ accordion.addEventListener('toggle', function() {
 });
         </script>
     <body>
-        <div class="navbar" id="myNavbar">
-            <a href="TrangChu.html">Trang Chủ</a>
-            <a href="#news">Tin Tức</a>
-            <a href="#contact">Liên Hệ</a>
-            <a href="#about">Giới Thiệu</a>
-            <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Tìm kiếm.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+        <div id="main">
+            <div class="navbar" id="myNavbar">
+                <div class="navlist">
+                    <a class="navbaritem" href="index.html">Trang Chủ</a>
+                    <a class="navbaritem" href="#">Thể Loại</a>
+                    <a class="navbaritem" href="#">Liên Hệ</a>
+                    <a class="navbaritem" href="#">Giới Thiệu</a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+                </div>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
         </div>
 
-        <h1 style="text-align:center;">Khu Trạm Truyện</h1>
+        <h1 class="title">Văn Học Việt</h1>
         <div class="comic-grid"></div>
-        <div class="a">
-            <a href="Btl Truyện Tranh_Đoàn Linh.html" class="link">Trang chủ>></a>    
-            <a href="Noidung.html" class="link">Nội Dung Truyện</a>
-        </div>
             
-        <h1 class="h1">DẾ MÈN PHIÊU LƯU KÝ</h1>
+        <h1 style="text-align: center;">DẾ MÈN PHIÊU LƯU KÝ</h1>
         
             <div class="container">
-                <img src="IMG/De-men-phieu-luu-ky-1.jpg" alt="Ảnh">
-                <div class="content">
-                <p class="p">
+                <img class="flex" src="Another/IMG/De-men-phieu-luu-ky-1.jpg" alt="Ảnh">
+                <div class="flex">
+                    <p class="p">
                     Dế Mèn sắp ra Hải Phòng, lại vào miền Nam, rồi đi Sô-phi-a. 
                     Năm trước, đã đến sông Đa-nuýp bờ bên này. Bây giờ mới sang Bun-ga-ri. 
                     Dế Mèn vẫn mong ước.
@@ -73,9 +69,10 @@ accordion.addEventListener('toggle', function() {
                     <br>Tô Hoài.<br> 
                         
                     <br>NXB Kim Đồng
-                </p>
+                    </p>
                 </div>
-            </div>
+                </div>
+            
 
             <div class="thediv2">
             <ul class="ul">
@@ -110,15 +107,15 @@ accordion.addEventListener('toggle', function() {
                     <summary><a href="trang10.html">Chuong X</a></summary>
                 </details>
             </ul>
-            
-                <h2 class="h2">
-                    Đánh Giá Nhận Xét Về Truyện!
-                </h2>
-                <p>Mong Những lời đánh giá của mọi người 1 cách chân thật nhất!</p>
-                <p>Nhập Xong Nhớ ấn Enter Nha</p>
-                <input
-                    style="width: 30%;text-align: center; color: #17070c;border-radius: 5px;border-color: #1b0209; padding: 15px 15px;"
-                    type="text" placeholder="Nhập Vào Đây">
+            </div>
+            <div class="creditbar">
+                <div class="creditbaritem">
+                    <p>@2024 Văn Học Việt - Đọc Văn Học Việt Nam</p>
+                </div>
+                <div>
+                    <p>Email: vhv@proton.me</p>
+                    <p>Chính Sách Bảo Mật</p>
+                </div>
             </div>
             <script>
                 function myFunction() {

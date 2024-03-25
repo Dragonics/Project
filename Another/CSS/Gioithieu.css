@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+p {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 20px; 
+}
+.title{
+    text-align: center;
+    margin: 50px;
+}
+.container {
+    display: flex;
+}
+.flex{
+    flex:1;
+}
+img {
+    position: absolute;
+    margin: auto 15px;
+    width: 20%;
+    height: auto; 
+    transform: translateX(2%);
+}
+.content {
+    flex: 1; 
+}
+.p{
+    font-size: 25px;
+}
+a{
+    color: rgb(232, 230, 227);
+}
+.ul{
+    font-size: 25px;
+}
+.ul {
+    cursor: pointer; 
+    transition: all 0.3s; 
+}
