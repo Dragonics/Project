@@ -5,34 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trang đọc truyện</title>
-<script>
-    function toggleTheme() {
-        const body = document.body;
-        body.classList.toggle('dark-mode');
-    }
-    const feedbackButton = document.getElementById('feedback-button');
-const feedbackPopup = document.getElementById('feedback-popup');
-const submitButton = document.getElementById('submit-feedback');
-
-feedbackButton.addEventListener('click', function() {
-    feedbackPopup.style.display = 'block';
-});
-
-submitButton.addEventListener('click', function() {
-    const userEmail = document.getElementById('user-email').value;
-    const userFeedback = document.getElementById('user-feedback').value;
-    alert(`Email: ${userEmail}\nPhản hồi: ${userFeedback}\n\nPhản hồi của bạn đã được gửi. Cảm ơn!`);
-    feedbackPopup.style.display = 'none';
-});
-function myFunction() {
-        var x = document.getElementById("myNavbar");
-        if (x.className === "navbar") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar";
-        }
-    }
-</script>
 <link rel="stylesheet" href="Đọc.css">
 <link rel="stylesheet" href="TrangChu.css">
 </head>
