@@ -25,7 +25,8 @@
         }
         .title{
             padding: 50px auto;
-            margin: 70px;
+            margin-top: 100px;
+            margin-bottom: 50px;
         }
         .navbaritem{
             display: block;
@@ -62,7 +63,8 @@
         }
         .comic-item img {
             width: 100%;
-            height: auto;
+            height:auto;
+            min-height: 150px;
         }
         .comic-item p {
             background-color: #333;
@@ -86,10 +88,11 @@
             color: #333;
         }
         .creditbar {
+            position: relative;
             display: flex;
+            bottom: 0;
             width: 100%;
             min-height: 50px;
-            bottom: 0;
             overflow: hidden;
             background-color: gray;
             justify-content: space-between;
